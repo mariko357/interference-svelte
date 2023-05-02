@@ -11,10 +11,10 @@
 
 <div class="warapper">
     <div class="input-div">
-        X: <input type="range" bind:value={sw} min={0} max={innerWidth - 200} />
+        X: <input type="range" bind:value={sw} min={0} max={innerWidth - 100} />
         <br />
         Y:
-        <input type="range" bind:value={sh} min={0} max={innerHeight - 200} />
+        <input type="range" bind:value={sh} min={0} max={innerHeight - 100} />
         <br />
         Wavelength1 : <input type="range" bind:value={l1} min={1} max={25} />
         <br />
@@ -22,7 +22,7 @@
     </div>
     <div class="canvas-div">
         <Canvas
-            width={innerWidth - 200}
+            width={innerWidth - 100}
             height={innerHeight - 100}
             wpos={sw}
             hpos={sh}
@@ -50,7 +50,7 @@
         justify-content: center;
         align-items: center;
         height: calc(100vh - 5rem);
-        margin-top: 15rem;
+        margin-top: 20rem;
     }
 
     .Canvas {
