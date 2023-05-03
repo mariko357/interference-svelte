@@ -18,7 +18,7 @@
         cnv.height = height;
         ctx.clearRect(0, 0, ctx.width, ctx.height);
 
-        ctx.strokeStyle = "blue";
+        ctx.strokeStyle = "red";
         for (let a = 0; a < Math.max(width, height) / 2; a += l1) {
             drawCircle(ctx, a, width / 2, height / 2);
         }

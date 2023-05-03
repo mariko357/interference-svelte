@@ -16,9 +16,8 @@
         Y:
         <input type="range" bind:value={sh} min={0} max={innerHeight - 100} />
         <br />
-        Wavelength1 : <input type="range" bind:value={l1} min={1} max={25} />
+        Wavelength : <input type="range" bind:value={l1} min={1} max={25} />
         <br />
-        Wavelength2 : <input type="range" bind:value={l2} min={1} max={25} />
     </div>
     <div class="canvas-div">
         <Canvas
@@ -27,7 +26,7 @@
             wpos={sw}
             hpos={sh}
             {l1}
-            {l2}
+            l2={l1}
         />
     </div>
 </div>
